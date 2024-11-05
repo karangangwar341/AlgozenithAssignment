@@ -3,13 +3,13 @@ import PartDetail from './PartDetail';
 
 const PartsList = () => {
   const partsData = [
-    { partTitle: 'PART 1 - Lorem Ipsum Dolor Sit Amet', time: '02:00:00', difficulty: 'Medium', completed: 45 },
-    { partTitle: 'PART 2 - Lorem Ipsum Dolor Sit Amet', time: '02:00:00', difficulty: 'Medium', completed: 20 },
-    { partTitle: 'PART 3 - Lorem Ipsum Dolor Sit Amet', time: '02:00:00', difficulty: 'Medium', completed: 0 },
+    {partId: "1", partTitle: 'Lorem Ipsum Dolor Sit Amet', time: '02:00:00', sheets: '5', difficulty: 'Medium', completed: 45 },
+    { partId: "2", partTitle: 'Lorem Ipsum Dolor Sit Amet', time: '02:00:00', sheets: '1', difficulty: 'Medium', completed: 20 },
+    { partId: "3", partTitle: 'Lorem Ipsum Dolor Sit Amet', time: '02:00:00', sheets: '8', difficulty: 'Medium', completed: 0 },
   ];
 
   return (
-    <div className="p-4">
+    <div className="w-full h-auto border [background:#FFF] rounded-2xl border-solid border-[rgba(164,230,255,0.00)]">
       {partsData.map((part, index) => (
         <PartDetail key={index} {...part} />
       ))}
